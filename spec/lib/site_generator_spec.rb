@@ -24,6 +24,7 @@ describe 'SiteGenerator' do
     site_generator.build_artists_index
 
     index = File.read("./tmp/_site/artists/index.html")
+
     expect(index).to include("Action Bronson")
     expect(index).to include("tUnE-yArDs")
   end
